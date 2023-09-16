@@ -34,7 +34,7 @@ try:
     # Open file selection dialog
     root = tk.Tk()
     root.withdraw()  # Hide Tkinter window
-    input_file_path = filedialog.askopenfilename(title="选择 Lua 文件", filetypes=[("Lua file", "*.lua")])
+    input_file_path = filedialog.askopenfilename(title="Select Lua file", filetypes=[("Lua file", "*.lua")])
 
     if not input_file_path:
         print("No file selected.")
