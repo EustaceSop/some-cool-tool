@@ -65,7 +65,7 @@ try:
     # Close Tkinter
     root.quit()
 except Exception as e:
-    # 发生异常时将错误信息写入 error_log.txt
+    # Write error message when exception occurs
     error_message = f"{datetime.datetime.now()}: {str(e)}\n"
     with open("error_log.txt", "a") as error_log_file:
         error_log_file.write(error_message)
